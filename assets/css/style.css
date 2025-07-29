@@ -121,6 +121,33 @@ h6 {
   color: var(--dark-text);
 }
 
+/* Custom CTA Button */
+.btn-cta {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 8px rgba(218, 168, 138, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: var(--charcoal-brown);
+  border-color: var(--charcoal-brown);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(96, 77, 68, 0.4);
+}
+
+.btn-cta:focus {
+  background-color: var(--charcoal-brown);
+  border-color: var(--charcoal-brown);
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(218, 168, 138, 0.5);
+}
+
 /* Utility Classes */
 .bg-light {
   background-color: var(--light-bg);
@@ -212,3 +239,32 @@ h6 {
   background-color: var(--cream-white);
 }
 */
+
+/* Image styling to match paragraph height */
+.about-site img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Ensure the image column centers the circular image */
+.about-site .col-md-6:has(img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About section image styling */
+.about-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+}
+
+/* Ensure vertical alignment */
+.about-site .row.align-items-center {
+  min-height: 300px;
+}
