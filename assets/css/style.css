@@ -138,34 +138,6 @@ h6 {
 }
 
 /* ========================================
-   ABOUT SECTION
-======================================== */
-.about-site .row.align-items-center {
-  min-height: 300px;
-}
-
-.about-site img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.about-site .col-md-6:has(img) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  margin: 0 auto;
-}
-
-/* ========================================
    AWARENESS SECTION
 ======================================== */
 .awareness-section img {
@@ -177,10 +149,8 @@ h6 {
 .crisis-resources-box {
   background-color: var(--accent);
   color: white;
-  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(218, 168, 138, 0.3);
-  margin: 0 auto;
   max-width: 350px;
 }
 
@@ -202,26 +172,23 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Resource Logo Sizing */
+/* Resource Logo Sizing - More efficient with auto height */
 .resource-logo {
-  width: 200px;
+  width: 220px;
   height: auto;
   object-fit: contain;
   object-position: center;
-  margin: 0 auto 1rem auto;
-  background-color: #ffffff;
-  border: 1px solid #e9ecef;
-  border-radius: 8px;
-  padding: 8px;
-  display: block;
 }
 
-/* Responsive logo sizing */
 @media (max-width: 767.98px) {
   .resource-logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .resource-logo {
     width: 160px;
-    height: auto;
-    padding: 6px;
   }
 }
 
@@ -273,10 +240,5 @@ h6 {
     font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 1.5rem;
-  }
-
-  .awareness-section .btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
   }
 }

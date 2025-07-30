@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ADD THESE MISSING META TAGS -->
+    <meta name="description"
+        content="Get immediate mental health support and resources. Find UK organizations, crisis helplines, and professional guidance.">
+    <meta name="keywords"
+        content="mental health support, crisis helplines, UK mental health organizations, therapy, counseling">
+    <meta name="author" content="Think You">
     <title>Think You | Help & Advice</title>
     <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
@@ -22,13 +28,30 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .visually-hidden-focusable:not(:focus):not(:focus-within) {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <!-- ADD SKIP NAVIGATION -->
+    <a href="#main-content" class="visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-2"
+        style="z-index: 9999;">Skip to main content</a>
+
     <nav class="navbar navbar-expand-lg py-3 sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
-                <img src="assets/images/think_you_logo.png" alt="Think You Logo" height="40" class="me-2">
+                <img src="assets/images/think_you_logo-min.webp" alt="Think You Logo" height="40" class="me-2">
                 <span class="fw-bold fs-4">Think You</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -52,7 +75,7 @@
     </nav>
 
     <!-- Main content area -->
-    <main class="flex-grow-1">
+    <main id="main-content" class="flex-grow-1">
         <!-- Hero Section -->
         <section
             class="hero-section d-flex align-items-center justify-content-center text-center text-white position-relative">
@@ -77,152 +100,161 @@
                     <div class="col-12">
                         <h2 class="text-center mb-4">Immediate Crisis Support</h2>
                         <p class="lead text-center mb-5">If you're in crisis or having thoughts of self-harm, please
-                            reach out immediately.
-                        </p>
+                            reach out immediately.</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="crisis-resources-box text-center">
-                            <h4 class="mb-3">24/7 Crisis Resources</h4>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="crisis-resources-box p-4 rounded shadow-sm text-center">
+                            <p class="mb-3"><strong>If you or someone you know is experiencing symptoms of any
+                                    mental health condition, please reach out for professional help.</strong></p>
+
+                            <h5 class="mb-3">Crisis Resources:</h5>
+
                             <p class="mb-2">Emergency Services: <strong>999</strong> (UK)</p>
                             <p class="mb-2">NHS Non-Emergency: <a href="https://111.nhs.uk/" target="_blank"
                                     rel="noopener noreferrer"
                                     class="text-white text-decoration-underline"><strong>111</strong></a> (UK)</p>
                             <p class="mb-2">Crisis Text Line: Text <strong>HOME</strong> to <strong>741741</strong></p>
                             <p class="mb-0">International: <a href="https://www.iasp.info/resources/Crisis_Centres/"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="text-white text-decoration-underline">IASP Crisis Centres</a></p>
+                                    target="_blank" rel="noopener noreferrer" class="text-decoration-underline">IASP
+                                    Crisis Centres</a></p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <hr class="my-5">
-
-            <!-- UK Mental Health Organizations Section -->
+            <!-- Resource Cards with Bootstrap -->
             <section class="mb-5">
                 <div class="row mb-4">
                     <div class="col-12">
                         <h2 class="text-center mb-4">UK Mental Health Organizations</h2>
                         <p class="lead text-center mb-5">Trusted UK organizations providing support, advice, and
-                            resources.
-                        </p>
+                            resources.</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <!-- Samaritans -->
+                    <!-- Samaritans - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/samaritans-min.webp" alt="Samaritans Logo"
-                                        class="resource-logo">
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Samaritans</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Samaritans</h5>
                                 <p class="card-text flex-grow-1">Samaritans provide 24-hour online and phone support to
-                                    people
-                                    in distress.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Phone:</strong> 116 123</p>
-                                    <p class="mb-0"><strong>Available:</strong> 24/7</p>
+                                    people in distress.</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Phone:</strong> 116 123</p>
+                                    <p class="mb-0 small"><strong>Available:</strong> 24/7</p>
                                 </div>
                                 <div class="mt-auto">
-                                    <a href="http://www.samaritans.org/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                    <a href="https://www.samaritans.org/" target="_blank" rel="noopener noreferrer"
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Mind -->
+                    <!-- Mind - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
-                                    <img src="assets/images/mind-min.webp" alt="Mind Logo" class="resource-logo">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
+                                    <img src="assets/images/mind-min.webp" alt="Mind Logo"
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Mind</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Mind</h5>
                                 <p class="card-text flex-grow-1">Mind is a charity that provides advice and support for
-                                    people
-                                    experiencing a mental health problem in England and Wales.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Phone:</strong> 0300 123 3393</p>
-                                    <p class="mb-0"><strong>Available:</strong> Mon to Fri, 9am to 6pm</p>
+                                    people experiencing a mental health problem in England and Wales.</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Phone:</strong> 0300 123 3393</p>
+                                    <p class="mb-0 small"><strong>Available:</strong> Mon to Fri, 9am to 6pm</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.mind.org.uk/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Rethink Mental Illness -->
+                    <!-- Rethink Mental Illness - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/rethink-min.webp" alt="Rethink Mental Illness Logo"
-                                        class="resource-logo">
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Rethink Mental Illness</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Rethink Mental Illness</h5>
                                 <p class="card-text flex-grow-1">Support and advice for people living with mental health
                                     problems.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Phone:</strong> 0300 5000 927</p>
-                                    <p class="mb-0"><strong>Available:</strong> Mon to Fri, 9.30am to 4pm</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Phone:</strong> 0300 5000 927</p>
+                                    <p class="mb-0 small"><strong>Available:</strong> Mon to Fri, 9.30am to 4pm</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.rethink.org/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SANE -->
+                    <!-- SANE - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
-                                    <img src="assets/images/sane-min.webp" alt="SANE Logo" class="resource-logo">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
+                                    <img src="assets/images/sane-min.webp" alt="SANE Logo"
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">SANE</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">SANE</h5>
                                 <p class="card-text flex-grow-1">National out-of hours mental health charity offering
-                                    emotional
-                                    support, guidance and information.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Phone:</strong> 0300 304 7000</p>
-                                    <p class="mb-0"><strong>Available:</strong> 4.30pm to 10.30pm</p>
+                                    emotional support, guidance and information.</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Phone:</strong> 0300 304 7000</p>
+                                    <p class="mb-0 small"><strong>Available:</strong> 4.30pm to 10.30pm</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.sane.org.uk/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Mental Health Foundation -->
+                    <!-- Mental Health Foundation - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/mental-health-foundation-min.webp"
-                                        alt="Mental Health Foundation Logo" class="resource-logo">
+                                        alt="Mental Health Foundation Logo"
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Mental Health Foundation</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Mental Health Foundation</h5>
                                 <p class="card-text flex-grow-1">Information and support for anyone with mental health
-                                    problems
-                                    or learning disabilities.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Contact:</strong> Online resources</p>
-                                    <p class="mb-0"><strong>Available:</strong> 24/7 online</p>
+                                    problems or learning disabilities.</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Contact:</strong> Online resources</p>
+                                    <p class="mb-0 small"><strong>Available:</strong> 24/7 online</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.mentalhealth.org.uk/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
@@ -241,48 +273,53 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <!-- Voice Collective -->
+                    <!-- Voice Collective - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/voice-collective-min.webp" alt="Voice Collective Logo"
-                                        class="resource-logo">
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Voice Collective</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Voice Collective</h5>
                                 <p class="card-text flex-grow-1">Support and information for children and young people
-                                    who
-                                    hear, see or sense things that others don't.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Contact:</strong> Online support</p>
-                                    <p class="mb-0"><strong>Focus:</strong> Children & young people</p>
+                                    who hear, see or sense things that others don't.</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Contact:</strong> Online support</p>
+                                    <p class="mb-0 small"><strong>Focus:</strong> Children & young people</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.voicecollective.co.uk/" target="_blank"
-                                        rel="noopener noreferrer" class="btn btn-outline-primary">Visit Website</a>
+                                        rel="noopener noreferrer" class="btn btn-outline-primary w-100">Visit
+                                        Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Hearing Voices Network -->
+                    <!-- Hearing Voices Network - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/hearing-voices-network-min.webp"
-                                        alt="Hearing Voices Network Logo" class="resource-logo">
+                                        alt="Hearing Voices Network Logo"
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Hearing Voices Network</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Hearing Voices Network</h5>
                                 <p class="card-text flex-grow-1">Support and information for people who hear voices, see
                                     visions, or have other unusual experiences.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Contact:</strong> Local groups</p>
-                                    <p class="mb-0"><strong>Focus:</strong> Peer support</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Contact:</strong> Local groups</p>
+                                    <p class="mb-0 small"><strong>Focus:</strong> Peer support</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.hearing-voices.org/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
@@ -301,45 +338,49 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <!-- Childline -->
+                    <!-- Childline - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/childline-min.webp" alt="Childline Logo"
-                                        class="resource-logo">
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Childline</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Childline</h5>
                                 <p class="card-text flex-grow-1">Support for people under 19 in the UK.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Phone:</strong> 0800 11 11</p>
-                                    <p class="mb-0"><strong>Available:</strong> 24/7</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Phone:</strong> 0800 11 11</p>
+                                    <p class="mb-0 small"><strong>Available:</strong> 24/7</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.childline.org.uk/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Young Minds -->
+                    <!-- Young Minds - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/young-minds-min.webp" alt="Young Minds Logo"
-                                        class="resource-logo">
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Young Minds</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Young Minds</h5>
                                 <p class="card-text flex-grow-1">Child and adolescent mental health charity.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Parents' Helpline:</strong> 0808 802 5544</p>
-                                    <p class="mb-0"><strong>Focus:</strong> Children & adolescents</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Parents' Helpline:</strong> 0808 802 5544</p>
+                                    <p class="mb-0 small"><strong>Focus:</strong> Children & adolescents</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.youngminds.org.uk/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
@@ -355,51 +396,55 @@
                     <div class="col-12">
                         <h2 class="text-center mb-4">Suicide Prevention</h2>
                         <p class="lead text-center mb-5">Specialized support for those struggling with suicidal
-                            thoughts.
-                        </p>
+                            thoughts.</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <!-- CALM -->
+                    <!-- CALM - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
-                                    <img src="assets/images/calm-min.webp" alt="CALM Logo" class="resource-logo">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
+                                    <img src="assets/images/calm-min.webp" alt="CALM Logo"
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">CALM</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">CALM</h5>
                                 <p class="card-text flex-grow-1">Campaign Against Living Miserably. Charity dedicated to
                                     preventing male suicide.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Nationwide:</strong> 0800 58 58 58</p>
-                                    <p class="mb-0"><strong>London:</strong> 0808 802 58 58</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Nationwide:</strong> 0800 58 58 58</p>
+                                    <p class="mb-0 small"><strong>London:</strong> 0808 802 58 58</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.thecalmzone.net/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Papyrus Hopeline UK -->
+                    <!-- Papyrus Hopeline UK - FIXED -->
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-100 shadow-sm resource-card">
+                        <div class="card h-100 shadow-sm" style="min-height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <div class="text-center mb-3">
+                                <div class="text-center mb-3 d-flex align-items-center justify-content-center"
+                                    style="min-height: 220px;">
                                     <img src="assets/images/papyrus-min.webp" alt="Papyrus Hopeline UK Logo"
-                                        class="resource-logo">
+                                        class="resource-logo bg-white border rounded p-3">
                                 </div>
-                                <h5 class="card-title">Papyrus Hopeline UK</h5>
+                                <h5 class="card-title text-center d-flex align-items-center justify-content-center"
+                                    style="min-height: 3rem;">Papyrus Hopeline UK</h5>
                                 <p class="card-text flex-grow-1">Confidential support for young people struggling with
                                     suicidal thoughts.</p>
-                                <div class="contact-info mb-3">
-                                    <p class="mb-1"><strong>Phone:</strong> 0800 068 41 41</p>
-                                    <p class="mb-0"><strong>Focus:</strong> Young people</p>
+                                <div class="bg-light p-3 rounded mb-3" style="min-height: 80px;">
+                                    <p class="mb-1 small"><strong>Phone:</strong> 0800 068 41 41</p>
+                                    <p class="mb-0 small"><strong>Focus:</strong> Young people</p>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://www.papyrus-uk.org/" target="_blank" rel="noopener noreferrer"
-                                        class="btn btn-outline-primary">Visit Website</a>
+                                        class="btn btn-outline-primary w-100">Visit Website</a>
                                 </div>
                             </div>
                         </div>
