@@ -20,14 +20,6 @@
   --light-highlight: #bfd6c3; /* Mint green */
   --dark-highlight: #a0b79e; /* Sage green */
   --accent: #daa88a; /* Terracotta */
-
-  /* Future Colors - Commented out for now */
-  /* --sage: #7b8c8c; */ /* Sage green-gray */
-  /* --warm-beige: #d9cab3; */ /* Warm beige */
-  /* --dusty-rose: #a99894; */ /* Dusty rose */
-  /* --soft-mint: #b3c2bf; */ /* Soft mint */
-  /* --charcoal-brown: #604d44; */ /* Charcoal brown */
-  /* --cream-white: #e8e4d9; */ /* Cream white */
 }
 
 /* ========================================
@@ -135,7 +127,7 @@ h6 {
 ======================================== */
 .hero-section {
   min-height: 70vh;
-  background-image: url("../images/hero-image.jpg");
+  background-image: url("../images/hero-bg-min.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,6 +202,29 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* Resource Logo Sizing */
+.resource-logo {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto 1rem auto;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 8px;
+  display: block;
+}
+
+/* Responsive logo sizing */
+@media (max-width: 767.98px) {
+  .resource-logo {
+    width: 160px;
+    height: auto;
+    padding: 6px;
+  }
+}
+
 /* ========================================
    UTILITY CLASSES
 ======================================== */
@@ -265,21 +280,3 @@ h6 {
     padding: 0.5rem 1rem;
   }
 }
-
-/* ========================================
-   FUTURE COLOR UTILITIES (COMMENTED)
-======================================== */
-/*
-.text-sage { color: var(--sage); }
-.bg-sage { background-color: var(--sage); }
-.text-warm-beige { color: var(--warm-beige); }
-.bg-warm-beige { background-color: var(--warm-beige); }
-.text-dusty-rose { color: var(--dusty-rose); }
-.bg-dusty-rose { background-color: var(--dusty-rose); }
-.text-soft-mint { color: var(--soft-mint); }
-.bg-soft-mint { background-color: var(--soft-mint); }
-.text-charcoal-brown { color: var(--charcoal-brown); }
-.bg-charcoal-brown { background-color: var(--charcoal-brown); }
-.text-cream-white { color: var(--cream-white); }
-.bg-cream-white { background-color: var(--cream-white); }
-*/
