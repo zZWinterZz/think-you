@@ -142,10 +142,11 @@ think-you/
 ---
 
 - **Initial lighthouse test**
-
 ![lighthouse testing](assets/documentation/lighthouse-initial.PNG)
+
 - **I was not happy with best practices**
 ![lighthouse testing](assets/documentation/lighthouse-best-practices.PNG)
+
 - **On inspection I found that I was using the wrong link for font awesome so fixed it and re-tested**
 ![lighthouse testing](assets/documentation/lighthouse-best-practices-2.PNG)
 
