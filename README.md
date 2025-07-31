@@ -123,13 +123,13 @@ think-you/
 #### Wireframes
 ---
 - **Home Page:**
-  ![Wireframe Home](assets/documentation/index.png)
+  ![Wireframe Home](assets/documentation/index.PNG)
 - **Awareness Page:**
-  ![Wireframe Awareness](assets/documentation/awareness.png)
+  ![Wireframe Awareness](assets/documentation/awareness.PNG)
 - **Help & Advice Page:**
-  ![Wireframe Help](assets/documentation/help.png)
+  ![Wireframe Help](assets/documentation/help.PNG)
 - **Contact Page:**
-  ![Wireframe Contact](assets/documentation/contact.png)
+  ![Wireframe Contact](assets/documentation/contact.PNG)
 
 ---
 
