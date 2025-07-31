@@ -119,9 +119,13 @@ think-you/
 - **Performance:** Optimized images (WebP), minimized inline styles, and efficient CSS.
 
 ### Screenshots
+
 ---
+
 #### Wireframes
+
 ---
+
 - **Home Page:**
   ![Wireframe Home](assets/documentation/index.PNG)
 - **Awareness Page:**
@@ -134,7 +138,9 @@ think-you/
 ---
 
 #### Validation and Testing
+
 ---
+
 - **Initial lighthouse test**
 
 ![lighthouse testing](assets/documentation/lighthouse-initial.PNG)
@@ -142,6 +148,7 @@ think-you/
 ![lighthouse testing](assets/documentation/lighthouse-best-practices.PNG)
 - **On inspection I found that I was using the wrong link for font awesome so fixed it and re-tested**
 ![lighthouse testing](assets/documentation/lighthouse-best-practices-2.PNG)
+
 ---
 
 ## Credits
