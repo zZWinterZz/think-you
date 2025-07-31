@@ -1,7 +1,30 @@
-/* ========================================
-   IMPORTS & FONTS
-======================================== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* ========================================
+   MODAL STYLES
+======================================== */
+.modal-content {
+  border-radius: 1rem;
+  border: 2px solid var(--accent);
+}
+.modal-header {
+  background-color: var(--accent);
+  color: #fff;
+  border-bottom: none;
+  border-radius: 1rem 1rem 0 0;
+}
+.modal-title {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.modal-body {
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  border-radius: 0 0 1rem 1rem;
+}
+.btn-close {
+  filter: invert(1) grayscale(1) brightness(2);
+}
 
 /* ========================================
    CSS CUSTOM PROPERTIES (VARIABLES)
@@ -31,6 +54,24 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
+}
+
+/* ========================================
+   CONTACT FORM INPUTS
+======================================== */
+#contact-form input,
+#contact-form textarea {
+  background-color: var(--light-bg);
+  border: 2px solid var(--accent);
+  color: var(--dark-text);
+  border-radius: 0.375rem;
+  font-family: var(--font-body);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--dark-highlight);
+  box-shadow: 0 0 0 0.2rem rgba(160, 183, 158, 0.15);
 }
 
 /* ========================================
@@ -98,6 +139,13 @@ h6 {
 .btn-outline-primary:hover {
   background-color: var(--dark-highlight);
   border-color: var(--dark-highlight);
+}
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #fff !important;
 }
 
 .btn-outline-light:hover {
