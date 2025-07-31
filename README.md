@@ -11,7 +11,7 @@ A modern, accessible, and responsive mental health support website for the UK. T
 - [Folder Structure](#folder-structure)
 - [Customization](#customization)
 - [Accessibility & SEO](#accessibility--seo)
-- [Screenshots / Wireframes](#screenshots--wireframes)
+- [Screenshots](#screenshots)
 - [Credits](#credits)
 - [License](#license)
 
@@ -85,19 +85,6 @@ think-you/
 
 ---
 
-### Wireframes & Screenshots
-
-- **Home Page:**
-  ![Wireframe Home](assets/documentation/index.png)
-- **Awareness Page:**
-  ![Wireframe Awareness](assets/documentation/awareness.png)
-- **Help & Advice Page:**
-  ![Wireframe Help](assets/documentation/help.png)
-- **Contact Page:**
-  ![Wireframe Contact](assets/documentation/contact.png)
-
----
-
 ## Page Structure & Implementation Details
 
 ### Home Page (`index.html`)
@@ -130,6 +117,26 @@ think-you/
 - **Accessibility:** Semantic HTML, skip navigation, ARIA labels, and color contrast.
 - **SEO:** Meta tags, descriptive alt text, and proper heading structure.
 - **Performance:** Optimized images (WebP), minimized inline styles, and efficient CSS.
+
+### Screenshots
+---
+#### Wireframes
+---
+- **Home Page:**
+  ![Wireframe Home](assets/documentation/index.png)
+- **Awareness Page:**
+  ![Wireframe Awareness](assets/documentation/awareness.png)
+- **Help & Advice Page:**
+  ![Wireframe Help](assets/documentation/help.png)
+- **Contact Page:**
+  ![Wireframe Contact](assets/documentation/contact.png)
+
+---
+
+#### Validation and Testing
+---
+
+---
 
 ## Credits
 - [Bootstrap 5](https://getbootstrap.com/)
