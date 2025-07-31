@@ -89,6 +89,17 @@ h6 {
   border-color: var(--dark-highlight);
 }
 
+.btn-outline-primary {
+  border-color: var(--accent);
+  color: var(--charcoal-brown);
+  border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--dark-highlight);
+  border-color: var(--dark-highlight);
+}
+
 .btn-outline-light:hover {
   background-color: var(--light-highlight);
   border-color: var(--light-highlight);
